@@ -1,0 +1,65 @@
+{
+    "os": "Linux-5.10.147+-x86_64-with-glibc2.31",
+    "python": "3.9.16",
+    "heartbeatAt": "2023-04-12T19:26:41.228839",
+    "startedAt": "2023-04-12T19:26:24.983381",
+    "docker": null,
+    "cuda": null,
+    "args": null,
+    "state": "running",
+    "program": "V13.1_train_custom_lightning.ipynb",
+    "colab": "https://colab.research.google.com/notebook#fileId=1FtmavpjYE-PerzpDrbhBTm9QkM2gQwGA",
+    "git": {
+        "remote": "https://github.com/manu-kick/CrossPoint_Sapienza_NN_2023.git",
+        "commit": "ff5385eb46872a16a7f35c6908e452289dc52674"
+    },
+    "email": null,
+    "root": "/content/drive/MyDrive/CrossPoint_Sapienza_NN_2023",
+    "host": "262079c4416a",
+    "username": "root",
+    "executable": "/usr/bin/python3",
+    "cpu_count": 2,
+    "cpu_count_logical": 4,
+    "cpu_freq": {
+        "current": 2199.998,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2199.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.998,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "total": 166.77415084838867,
+        "used": 23.314857482910156
+    },
+    "gpu": "Tesla T4",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "Tesla T4",
+            "memory_total": 16106127360
+        }
+    ],
+    "memory": {
+        "total": 25.454143524169922
+    }
+}

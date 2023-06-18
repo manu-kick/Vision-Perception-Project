@@ -1,0 +1,117 @@
+2023-06-12 19:59:37,550 INFO    MainThread:654 [wandb_setup.py:_flush():76] Current SDK version is 0.15.4
+2023-06-12 19:59:37,551 INFO    MainThread:654 [wandb_setup.py:_flush():76] Configure stats pid to 654
+2023-06-12 19:59:37,551 INFO    MainThread:654 [wandb_setup.py:_flush():76] Loading settings from /root/.config/wandb/settings
+2023-06-12 19:59:37,551 INFO    MainThread:654 [wandb_setup.py:_flush():76] Loading settings from /content/wandb/settings
+2023-06-12 19:59:37,551 INFO    MainThread:654 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-06-12 19:59:37,551 INFO    MainThread:654 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-06-12 19:59:37,551 INFO    MainThread:654 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-06-12 19:59:37,551 INFO    MainThread:654 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2023-06-12 19:59:37,552 INFO    MainThread:654 [wandb_init.py:_log_setup():507] Logging user logs to /content/drive/MyDrive/VP_CrossPoint_2023/Pointnet2_PyTorch/pointnet2_ops_lib/wandb/run-20230612_195937-rpfityym/logs/debug.log
+2023-06-12 19:59:37,553 INFO    MainThread:654 [wandb_init.py:_log_setup():508] Logging internal logs to /content/drive/MyDrive/VP_CrossPoint_2023/Pointnet2_PyTorch/pointnet2_ops_lib/wandb/run-20230612_195937-rpfityym/logs/debug-internal.log
+2023-06-12 19:59:37,553 INFO    MainThread:654 [wandb_init.py:_jupyter_setup():453] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7fb1575fdfc0>
+2023-06-12 19:59:37,553 INFO    MainThread:654 [wandb_init.py:init():547] calling init triggers
+2023-06-12 19:59:37,554 INFO    MainThread:654 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {}
+2023-06-12 19:59:37,554 INFO    MainThread:654 [wandb_init.py:init():596] starting backend
+2023-06-12 19:59:37,554 INFO    MainThread:654 [wandb_init.py:init():600] setting up manager
+2023-06-12 19:59:37,563 INFO    MainThread:654 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-06-12 19:59:37,571 INFO    MainThread:654 [wandb_init.py:init():606] backend started and connected
+2023-06-12 19:59:37,588 INFO    MainThread:654 [wandb_run.py:_label_probe_notebook():1235] probe notebook
+2023-06-12 19:59:42,390 INFO    MainThread:654 [wandb_init.py:init():703] updated telemetry
+2023-06-12 19:59:42,396 INFO    MainThread:654 [wandb_init.py:init():736] communicating run to backend with 60.0 second timeout
+2023-06-12 20:00:39,370 WARNING MsgRouterThr:654 [router.py:message_loop():77] message_loop has been closed
+2023-06-12 20:00:39,370 WARNING MsgRouterThr:654 [router.py:message_loop():77] message_loop has been closed
+2023-06-12 20:00:39,370 WARNING MsgRouterThr:654 [router.py:message_loop():77] message_loop has been closed
+2023-06-12 20:00:42,503 ERROR   MainThread:654 [wandb_init.py:init():1180] error
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/wandb_init.py", line 1152, in init
+    run = wi.init()
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/wandb_init.py", line 739, in init
+    result = run_init_handle.wait(
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/lib/mailbox.py", line 308, in wait
+    self._cancel()
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/lib/mailbox.py", line 316, in _cancel
+    self._interface.publish_cancel(mailbox_slot)
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/interface/interface.py", line 193, in publish_cancel
+    self._publish_cancel(cancel)
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/interface/interface_shared.py", line 74, in _publish_cancel
+    self._publish(rec)
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/interface/interface_sock.py", line 51, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/lib/sock_client.py", line 221, in send_record_publish
+    self.send_server_request(server_req)
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/lib/sock_client.py", line 155, in send_server_request
+    self._send_message(msg)
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/lib/sock_client.py", line 152, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2023-06-12 20:01:00,332 INFO    MainThread:654 [wandb_setup.py:_flush():76] Current SDK version is 0.15.4
+2023-06-12 20:01:00,333 INFO    MainThread:654 [wandb_setup.py:_flush():76] Configure stats pid to 654
+2023-06-12 20:01:00,334 INFO    MainThread:654 [wandb_setup.py:_flush():76] Loading settings from /root/.config/wandb/settings
+2023-06-12 20:01:00,334 INFO    MainThread:654 [wandb_setup.py:_flush():76] Loading settings from /content/wandb/settings
+2023-06-12 20:01:00,334 INFO    MainThread:654 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-06-12 20:01:00,334 INFO    MainThread:654 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-06-12 20:01:00,335 INFO    MainThread:654 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-06-12 20:01:00,335 INFO    MainThread:654 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2023-06-12 20:01:00,336 INFO    MainThread:654 [wandb_init.py:_log_setup():507] Logging user logs to /content/drive/MyDrive/VP_CrossPoint_2023/Pointnet2_PyTorch/pointnet2_ops_lib/wandb/run-20230612_200100-5fnlkg4i/logs/debug.log
+2023-06-12 20:01:00,336 INFO    MainThread:654 [wandb_init.py:_log_setup():508] Logging internal logs to /content/drive/MyDrive/VP_CrossPoint_2023/Pointnet2_PyTorch/pointnet2_ops_lib/wandb/run-20230612_200100-5fnlkg4i/logs/debug-internal.log
+2023-06-12 20:01:00,337 INFO    MainThread:654 [wandb_init.py:init():547] calling init triggers
+2023-06-12 20:01:00,337 INFO    MainThread:654 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {}
+2023-06-12 20:01:00,338 INFO    MainThread:654 [wandb_init.py:init():596] starting backend
+2023-06-12 20:01:00,338 INFO    MainThread:654 [wandb_init.py:init():600] setting up manager
+2023-06-12 20:01:00,416 ERROR   MainThread:654 [wandb_init.py:init():1180] error
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/wandb_init.py", line 1152, in init
+    run = wi.init()
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/wandb_init.py", line 601, in init
+    manager._inform_init(settings=self.settings, run_id=self.settings.run_id)
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/wandb_manager.py", line 208, in _inform_init
+    svc_iface._svc_inform_init(settings=settings, run_id=run_id)
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/service/service_sock.py", line 38, in _svc_inform_init
+    self._sock_client.send(inform_init=inform_init)
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/lib/sock_client.py", line 211, in send
+    self.send_server_request(server_req)
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/lib/sock_client.py", line 155, in send_server_request
+    self._send_message(msg)
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/lib/sock_client.py", line 152, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2023-06-12 20:01:08,575 INFO    MainThread:654 [wandb_setup.py:_flush():76] Current SDK version is 0.15.4
+2023-06-12 20:01:08,576 INFO    MainThread:654 [wandb_setup.py:_flush():76] Configure stats pid to 654
+2023-06-12 20:01:08,577 INFO    MainThread:654 [wandb_setup.py:_flush():76] Loading settings from /root/.config/wandb/settings
+2023-06-12 20:01:08,577 INFO    MainThread:654 [wandb_setup.py:_flush():76] Loading settings from /content/wandb/settings
+2023-06-12 20:01:08,577 INFO    MainThread:654 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-06-12 20:01:08,577 INFO    MainThread:654 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-06-12 20:01:08,577 INFO    MainThread:654 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-06-12 20:01:08,577 INFO    MainThread:654 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2023-06-12 20:01:08,578 INFO    MainThread:654 [wandb_init.py:_log_setup():507] Logging user logs to /content/drive/MyDrive/VP_CrossPoint_2023/Pointnet2_PyTorch/pointnet2_ops_lib/wandb/run-20230612_200108-vj0xzs5i/logs/debug.log
+2023-06-12 20:01:08,578 INFO    MainThread:654 [wandb_init.py:_log_setup():508] Logging internal logs to /content/drive/MyDrive/VP_CrossPoint_2023/Pointnet2_PyTorch/pointnet2_ops_lib/wandb/run-20230612_200108-vj0xzs5i/logs/debug-internal.log
+2023-06-12 20:01:08,579 INFO    MainThread:654 [wandb_init.py:init():547] calling init triggers
+2023-06-12 20:01:08,579 INFO    MainThread:654 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {}
+2023-06-12 20:01:08,579 INFO    MainThread:654 [wandb_init.py:init():596] starting backend
+2023-06-12 20:01:08,579 INFO    MainThread:654 [wandb_init.py:init():600] setting up manager
+2023-06-12 20:01:08,650 ERROR   MainThread:654 [wandb_init.py:init():1180] error
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/wandb_init.py", line 1152, in init
+    run = wi.init()
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/wandb_init.py", line 601, in init
+    manager._inform_init(settings=self.settings, run_id=self.settings.run_id)
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/wandb_manager.py", line 208, in _inform_init
+    svc_iface._svc_inform_init(settings=settings, run_id=run_id)
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/service/service_sock.py", line 38, in _svc_inform_init
+    self._sock_client.send(inform_init=inform_init)
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/lib/sock_client.py", line 211, in send
+    self.send_server_request(server_req)
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/lib/sock_client.py", line 155, in send_server_request
+    self._send_message(msg)
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/lib/sock_client.py", line 152, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
