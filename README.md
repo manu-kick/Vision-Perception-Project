@@ -16,7 +16,7 @@ Here you find all the first step to download configure and run the code to train
 - clone repository from GitHub: git clone https://github.com/manu-kick/Vision-Perception-Project.git
 - download the datasets used in our experiment from this link https://drive.google.com/drive/folders/15aYNCSQAiCNuluOJEUUMP3SBalsqrUCL?usp=sharing
 - insert the all the folders downloaded in the 'data' folder in the root of the repo have(you should have the following folders: modelnet40_ply_hdf5_2048, ScanObjectNN, ShapeNet, ShapeNetRendering), make sure to unzip the files
-- then you can upload everything on drive, you must call the root repo folder with the following name: "Cross_Point_Sapienza_NN_23"
+- then you can upload everything on drive, you must call the root repo folder with the following name: "Vision-Perception-Project"
 
 
 ## Train the model you like
